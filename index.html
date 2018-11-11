@@ -1,0 +1,62 @@
+<!DOCTYPE html>             <!-- Declare that this an HTML5 document. -->
+<html lang="en">            <!-- Declare the content language. -->
+<head>
+    <meta charset="utf-8">  <!-- Declare the document's character set. -->
+    <title>FireStore CRUD Template</title>   <!-- Set the page title.  Will be displayed at the top of the browser window and in bookmarks.  -->
+    <link rel="stylesheet" href="index.css">    <!-- Include styles from index.css. -->
+</head>
+
+<!--  Start body -->
+
+  <body>
+    <title>FireStore CRUD Prototype</title>
+    Hello FireStore Developers!
+
+    <br><br>
+    <!--  Message Label frequently updated -->
+    <div id = "messageBoard">Message Board...</div>
+    <br>
+
+    <!--  Player Data  -->
+    ID: <input type="text" id="idInputBox" value="">  <br>
+    Name: <input type="text" id="nameInputBox" value="">  <br>
+    Status: <input type="text" id="statusInputBox" value="false">  <br>
+    Target: <input type="text" id="targetInputBox" value="">  <br>
+
+    <br><br>
+    <button onclick="createDB()">Reset DB</button>
+
+    <br><br>
+    <button onclick="retrieveGameData()">Retrieve Game Data</button>
+
+    <br><br>
+    <button onclick="retrievePlayerData()">Retrieve Player Data</button>
+
+    <br><br>
+    <button onclick="getAllPlayers()">Get All Players</button>
+
+    <br><br>
+    <button onclick="updateData()">Update Data</button>
+
+    <br><br>
+    <button onclick="deleteData()">Delete Data</button>
+    <br><br>
+
+    <button onclick="addAdmin()">Add Admin</button>
+    <br><br>
+
+    <button onclick="readArray()">Read Array</button>
+    <br><br>
+
+    <button onclick="writeArray()">Write Array</button>
+    <br><br>
+
+    <!-- ***  Start aside section ****  -->
+    <aside>
+    </aside>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+    <script src="index.js"></script>    <!-- Include index.js as a JavaScript script file. -->
+  </body>
+
+</html>
